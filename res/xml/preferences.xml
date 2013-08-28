@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="pref_key_gui"
+        android:title="@string/pref_gui" >
+        <EditTextPreference
+            android:key="pref_key_gui_defaultsite"
+            android:title="@string/pref_gui_defaultsite" />
+
+        <ListPreference
+            android:defaultValue="@string/pref_ctl_shutdown_command"
+            android:entries="@array/pref_ctl_shutdown_items"
+            android:entryValues="@array/pref_ctl_shutdown_items"
+            android:key="pref_key_ctl_shutdown"
+            android:persistent="true"
+            android:title="@string/pref_ctl_shutdown" />
+        <ListPreference
+            android:defaultValue="@string/pref_gui_reloadonwake_none"
+            android:entries="@array/pref_gui_reloadonwake_items"
+            android:entryValues="@array/pref_gui_reloadonwake_items"
+            android:key="pref_key_gui_reloadonwake"
+            android:persistent="true"
+            android:title="@string/pref_gui_reloadonwake" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_nwk"
+        android:title="@string/pref_nwk" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_key_nwk_usesourceaddressfilter"
+            android:persistent="true"
+            android:title="@string/pref_nwk_usesourceaddressfiler" />
+
+        <EditTextPreference
+            android:dependency="pref_key_nwk_usesourceaddressfilter"
+            android:key="pref_key_nwk_sourceaddressfilter"
+            android:persistent="true"
+            android:title="@string/pref_nwk_sourceaddressfilter" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_ctl_batterymgmt"
+        android:title="@string/pref_ctl_batterymgmt" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_key_ctl_usebatterymgmt"
+            android:persistent="true"
+            android:title="@string/pref_ctl_usebatterymgmt" />
+
+        <EditTextPreference
+            android:dependency="pref_key_ctl_usebatterymgmt"
+            android:key="pref_key_ctl_battery_limit_lower"
+            android:numeric="integer"
+            android:persistent="true"
+            android:title="@string/pref_ctl_battery_limit_lower" />
+        <EditTextPreference
+            android:dependency="pref_key_ctl_usebatterymgmt"
+            android:key="pref_key_ctl_battery_limit_upper"
+            android:numeric="integer"
+            android:persistent="true"
+            android:title="@string/pref_ctl_battery_limit_upper" />
+        <EditTextPreference
+            android:dependency="pref_key_ctl_usebatterymgmt"
+            android:key="pref_key_ctl_battery_udpaddress"
+            android:persistent="true"
+            android:title="@string/pref_ctl_battery_udpaddress" />
+        <EditTextPreference
+            android:dependency="pref_key_ctl_usebatterymgmt"
+            android:key="pref_key_ctl_battery_udpport"
+            android:numeric="integer"
+            android:persistent="true"
+            android:title="@string/pref_ctl_battery_udpport" />
+        <EditTextPreference
+            android:dependency="pref_key_ctl_usebatterymgmt"
+            android:key="pref_key_ctl_battery_msg_on"
+            android:persistent="true"
+            android:title="@string/pref_ctl_battery_msg_on" />
+        <EditTextPreference
+            android:dependency="pref_key_ctl_usebatterymgmt"
+            android:key="pref_key_ctl_battery_msg_off"
+            android:persistent="true"
+            android:title="@string/pref_ctl_battery_msg_off" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_sip"
+        android:title="@string/pref_sip" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_key_sip_enable"
+            android:persistent="true"
+            android:title="@string/pref_sip_enable" />
+
+        <EditTextPreference
+            android:dependency="pref_key_sip_enable"
+            android:key="pref_key_sip_domain"
+            android:title="@string/pref_sip_domain" />
+        <EditTextPreference
+            android:dependency="pref_key_sip_enable"
+            android:key="pref_key_sip_user"
+            android:title="@string/pref_sip_user" />
+        <EditTextPreference
+            android:dependency="pref_key_sip_enable"
+            android:key="pref_key_sip_password"
+            android:password="true"
+            android:title="@string/pref_sip_password" />
+        
+        <EditTextPreference
+            android:dependency="pref_key_sip_enable"
+            android:key="pref_key_sip_sourceno"
+            android:persistent="true"
+            android:phoneNumber="true"
+            android:title="@string/pref_sip_sourceno" />
+        <EditTextPreference
+            android:dependency="pref_key_sip_enable"
+            android:key="pref_key_sip_code_onanswer"
+            android:persistent="true"
+            android:phoneNumber="true"
+            android:title="@string/pref_sip_code_onanswer" />
+        <EditTextPreference
+            android:dependency="pref_key_sip_enable"
+            android:key="pref_key_sip_code_dooropen"
+            android:persistent="true"
+            android:phoneNumber="true"
+            android:title="@string/pref_sip_code_dooropen" />
+        <EditTextPreference
+            android:dependency="pref_key_sip_enable"
+            android:key="pref_key_sip_code_onhangup"
+            android:persistent="true"
+            android:phoneNumber="true"
+            android:title="@string/pref_sip_code_onhangup" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="pref_key_sip_enable"
+            android:key="pref_key_sip_hangupondooropen"
+            android:persistent="true"
+            android:title="@string/pref_sip_hangupondooropen" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

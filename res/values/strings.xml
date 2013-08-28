@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">House Dialog</string>
+    <string name="INT_NETWORKERROR">##NW_ERROR##</string>
+    <string name="CMD_ONOFF">ONOFF</string>
+    <string name="CMD_RELOAD">RELOAD</string>
+    <string name="CMD_SITE">SITE</string>
+    <string name="CMD_DIALOG">DIALOG</string>
+    <string name="call_label">Türklingel</string>
+    <string name="call_accept">Annehmen</string>
+    <string name="call_reject">Ablehnen</string>
+    <string name="pref_title">Einstellungen</string>
+    <string name="pref_gui">Oberfläche</string>
+    <string name="pref_gui_defaultsite">Startseite für GUI</string>
+    <string name="pref_gui_reloadonwake">Webseite beim Aufwachen neu laden</string>
+    <string name="pref_gui_reloadonwake_mostrecent">Zuletzt geladene Seite</string>
+    <string name="pref_gui_reloadonwake_default">Startseite</string>
+    <string name="pref_gui_reloadonwake_none">Keine</string>
+
+    <string-array name="pref_gui_reloadonwake_items">
+        <item>@string/pref_gui_reloadonwake_mostrecent</item>
+        <item>@string/pref_gui_reloadonwake_default</item>
+        <item>@string/pref_gui_reloadonwake_none</item>
+    </string-array>
+
+    <string name="pref_nwk">Netzwerk</string>
+    <string name="pref_nwk_usesourceaddressfiler">Quelladressfilter für Befehle verwenden</string>
+    <string name="pref_nwk_sourceaddressfilter">Erlaubte Quelladresse</string>
+    <string name="pref_ctl_shutdown">Bildschirm automatisch abschalten</string>
+    <string name="pref_ctl_shutdown_system">Systemeinstellung verwenden</string>
+    <string name="pref_ctl_shutdown_command">Über externen Befehl</string>
+
+    <string-array name="pref_ctl_shutdown_items">
+        <item>@string/pref_ctl_shutdown_system</item>
+        <item>@string/pref_ctl_shutdown_command</item>
+    </string-array>
+
+    <string name="pref_ctl_batterymgmt">Batterie</string>
+    <string name="pref_ctl_usebatterymgmt">Batteriemanagement verwenden</string>
+    <string name="pref_ctl_battery_limit_upper">Obere Ladegrenze in %</string>
+    <string name="pref_ctl_battery_limit_lower">Untere Ladegrenze in %</string>
+    <string name="pref_ctl_battery_udpaddress">Serveradresse für Ladeanforderung</string>
+    <string name="pref_ctl_battery_udpport">Port für Ladeanforderung</string>
+    <string name="pref_ctl_battery_msg_on">Befehl für Laden einschalten</string>
+    <string name="pref_ctl_battery_msg_off">Befehl für Laden beenden</string>
+    <string name="pref_sip">Türöffner</string>
+    <string name="pref_sip_enable">Türöffner verwenden</string>
+    <string name="pref_sip_domain">SIP-Domain</string>
+    <string name="pref_sip_user">SIP-Username</string>
+    <string name="pref_sip_password">SIP-Passwort</string>
+    <string name="pref_sip_sourceno">Nummer der Gegenstelle</string>
+    <string name="pref_sip_code_onanswer">Code nach Abnehmen</string>
+    <string name="pref_sip_code_dooropen">Code zum Türöffnen</string>
+    <string name="pref_sip_code_onhangup">Code vor Auflegen</string>
+    <string name="pref_sip_hangupondooropen">Auflegen nach Türöffnen</string>
+    <string name="websocket_filename">WebSocket.js</string>
+
+</resources>

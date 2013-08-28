@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="udp_localport">27777</integer>
+    
+    <integer name="ws_defaultport">80</integer>
+
+    <integer-array name="number_array_1">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+    
+    <integer-array name="number_array_2">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
+</resources>
